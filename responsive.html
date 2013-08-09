@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Bootstrap</title>
+        <!-- Turn on responsive CSS in your project by including the proper meta tag and additional stylesheet within the <head> of your document. If you've compiled Bootstrap from the Customize page, you need only include the meta tag. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://flip.hr/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>   
+                <header>
+                    <div class="navbar" id="main-nav">
+                        <div class="navbar-inner">
+                            <div class="container">
+                                <a class="brand visible-phone" href="#">
+                                    <img height="24" id="favicon" src="img/bootstrap-mdo-sfmoma-03.jpg" width="24"> TrueCost
+                                </a>
+                                <a class="btn btn-navbar pull-right" data-target=".nav-collapse" data-toggle="collapse" id="menu_button">
+                                    Menu
+                                </a>
+                                <div class="nav-collapse collapse">
+                                    <ul class="nav">
+                                        <li><a href="/homepage">Home</a></li>
+                                        <li class="visible-phone"><a href="/Register">Register</a></li>
+                                        <li class="visible-phone"><a href="/SiteLogin" styleclass="last">Login</a></li>
+                                        <li><a href="/truecostblog">News &amp; Insights</a></li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Support <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/FAQ">FAQ</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="tel:18004613056">Call (800) 461-3056</a></li>
+                                                <li><a href="mailto:TrueCost@CenterPointEnergy.com">Email Us</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <div class="row">
+
+                <!-- Left content -->
+                <div class="span2 hidden-phone pagination-centered" style="border: 2px solid #d4d4d4;">
+                    <hr/>
+                    <div>
+                        <h4>Take a Tour</h4>
+                        <h5><em><b>Watch and learn how easy it is to...</b></em></h5>
+                    </div>
+                    <div class="text-left">
+                        <ul>
+                            <li>Give permission to share meter data</li>
+                            <li>Shop and compare</li>
+                            <li>Sign up for a new plan</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>
+                            Plus, learn how <span style="color:#3a87ad;"><a href="#">CenterPoint Energy Electric Price Index</a></span> can help you decide which contract lengths are a good deal right now.
+                        </p>
+                    </div>
+                    <hr/>
+                </div>
+                <!-- Left content ends here -->
+
+                <!-- Middle content -->
+                <div class="span6">
+
+                    <h2 class="text-info">You have the freedom to choose low electric rates</h2>
+                    <p class="lead">The dog days of summer are a great time to declare your independence from high electric rates. </p><p class="lead">On average, TrueCost customers report saving more than 20%*!</p>
+
+                    <!-- Carousel needs to be built making use of the JSON data attached -->
+                    <div class="pull-right span3" id="jsoncra" style="border: 1px solid red;">
+                       <!-- <a href="#"><img src="img/bootstrap-mdo-sfmoma-02.jpg" style="margin:14px;" /></a> -->
+
+                        <div id="myCarousel" class="carousel slide">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel items -->
+                            <div class="carousel-inner" >
+                              <!-- <div class="active item"><img src="img/bootstrap-mdo-sfmoma-01.jpg" alt="First one"></div><div class="item"><img src="img/bootstrap-mdo-sfmoma-03.jpg" alt="First one"></div><div class="item"><img src="img/bootstrap-mdo-sfmoma-02.jpg" alt="First one"></div> -->
+                            </div>
+                            <!-- Carousel nav -->
+                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                        </div>
+                    </div>
+
+                </div>
+                <ul>
+                    <li><p class="lead">It's the <strong>FREE</strong> and <strong>EASY</strong> way to compare electric plans</p> </li>
+                    <li><p class="lead">Many customer-rated providers and plans</p></li>
+                    <li><p class="lead">Switch to a new, better plan in minutes - or register and we'll send you a reminder when it's time to switch </p></li>
+                </ul>
+
+                <a href="/shopplans" Class="btn btn-warning" id="search_plans_submit">Start Shopping!</a>
+                <div class="space-height"></div>
+            </div>
+            <!-- Middle content ends here -->  
+
+            <!-- Right content -->       
+            <div class="span3 pull-right">
+                <div style="border: 2px solid #d4d4d4;">
+                    <div id="myCarousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Carousel items -->
+                        <div class="carousel-inner" style="margin-top:15px;" >
+                            <div class="active item">
+                                <img src="img/bootstrap-mdo-sfmoma-03.jpg" alt="First one">
+                            </div>
+                            <div class="item">
+                                <img src="img/bootstrap-mdo-sfmoma-01.jpg" alt="Second one">
+                            </div>
+                            <div class="item">
+                                <img src="img/bootstrap-mdo-sfmoma-02.jpg" alt="Third one">
+                            </div>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Right content ends here -->
+
+            <!-- .row -->
+        </div>
+    </div>
+
+    <!-- <footer>
+        <div class="footer">
+            <small>
+                <ul class="footer-links">
+                    <li><a href="/Privacy">Privacy Policy</a></li>
+                    <li class="muted">|</li>
+                    <li><a href="/TermsofService">Terms of Use</a></li>
+                    <li class="muted">|</li>
+                    <li><a href="/sitemappublic">Site Map</a></li>
+                    <li class="muted">|</li>
+                    <li><a href="/contactus">Contact Us</a></li>
+                </ul>
+                <p>Copyright 2013 CenterPoint Energy</p>
+            </small>
+        </div>
+    </footer> -->
+
+    <!-- .container -->
+</body>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+    
+        $.getJSON('image.json', function(data) {
+            var items = [];
+     
+            $.each(data, function(key, val) {
+                alert(val);
+                alert(val);
+                items.push('<div class="'+ key + '"><img src="'+ val + '" alt="First one"></div>');
+            });
+            $('.carousel-inner').html(items);
+        
+        });
+
+        $('.carousel').carousel({
+            interval: 1000,
+            pause:"hover"
+        });
+    }); 
+</script>
+
+</html>
